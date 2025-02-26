@@ -2,3 +2,63 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --main-font: "IBM Plex mono";
+
+  --main-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --content-title-color: #ff0070;
+  --title-decor-color: #000028;
+  --titul-color: #db00ff;
+  --button-text-color: #ff0070;
+  --hover-color: rgb(255 0 112 / 40%);
+  --background-image: url(../images/cover-image-dark.png);
+  --visible-decor: block;
+  --min-height-header: 668px;
+  --page-padding: 10px;
+  --menu-margin-top: 39px;
+  --menu-row: 2;
+  --menu-column: 3;
+  --menu-flex-direction: column;
+  --menu-justify: end;
+  --titul-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --content-padding-to: 25px;
+  --content-title-top: 25px;
+  --content-ar-top: 20px;
+  --content-ar-title-margin-top: 0px;
+  --header-margin-bot: 25px;
+  --header-title-margin-top: 18%;
+  --header-title-margin-left: 0px;
+  --header-text-margin-top: 5px;
+  --header-text-width: 355px;
+  --grid-vertically-gap: 0px;
+  --vertically-title: 1/3;
+  --vertically-article: 1/3;
+  --horizon-title: 1/4;
+  --horizon-article: 1/4;
+  --horizon-margin-top: 25px;
+  --horizon-margin-bot: 25px;
+  --horizon-gap: 0px;
+  --horizon-title-ght: 0%;
+  --picture-top: 50px;
+  --gallery_gap: 6px;
+  --gallery-columns: 1fr;
+  --gallery-rows: auto;
+  --image-block-size: initial;
+  --image-max-block-size: initial;
+  --image-object-fit: initial;
+  --img-colum-1: 1/4;
+  --img-row-1: 1;
+  --img-colum-2: 1/4;
+  --img-row-2: 2;
+  --img-colum-3: 1/4;
+  --img-row-3: 3;
+  --img-colum-4: 1/4;
+  --img-row-4: 4;
+  --img-colum-5: 1/4;
+  --img-row-5: 5;
+  --footer-margin-top: 45px;
+  --footer-title-top: 17.5rem;
+  --footer-title-bot: 17rem;
+}

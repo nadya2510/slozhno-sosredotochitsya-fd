@@ -27,7 +27,7 @@
   justify-items: end;
   align-items: start;
   min-height: calc(100vh - 2 * var(--page-padding, 10px));
-  height: calc(100% - 2 * var(--page-padding, 10px));
+  height: calc(100vh - 2 * var(--page-padding, 10px));
   margin-block-end: var(--header-margin-bot, 25px);
 }
 
@@ -295,7 +295,7 @@
   grid-template-rows: min-content min-content 1fr min-content min-content;
   margin-block-start: var(--footer-margin-top, 50px);
   min-height: calc(100vh - 2 * var(--page-padding, 10px));
-  height: calc(100% - 2 * var(--page-padding, 10px));
+  height: calc(100vh - 2 * var(--page-padding, 10px));
 }
 
 .footer__title {

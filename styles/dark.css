@@ -10,14 +10,13 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --main-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #ff0070; 
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
   --content-title-color: #ff0070;
-  --title-decor-color:#000028;
-  --titul-color: #DB00FF;
+  --title-decor-color: #000028;
+  --titul-color: #db00ff;
   --button-text-color: #ff0070;
-  --hover-color: rgb(255 0 112 / 40%); 
+  --hover-color: rgb(255 0 112 / 40%);
   --background-image: url(../images/cover-image-dark.png);
   --visible-decor: block;
 }
-

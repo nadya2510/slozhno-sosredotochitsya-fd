@@ -1,10 +1,5 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   --main-font: "IBM Plex mono";
-
   --main-color: #000028;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
@@ -15,9 +10,9 @@
   --hover-color: rgb(255 0 112 / 40%);
   --background-image: url(../images/cover-image-dark.png);
   --visible-decor: block;
-  --min-height-header: 668px;
+  --min-height-page: 668px;
   --page-padding: 10px;
-  --menu-margin-top: 39px;
+  --menu-margin-top: 8px;
   --menu-row: 2;
   --menu-column: 3;
   --menu-flex-direction: column;
@@ -27,21 +22,22 @@
   --content-title-top: 25px;
   --content-ar-top: 20px;
   --content-ar-title-margin-top: 0px;
+  --header-gap: 31px;
   --header-margin-bot: 25px;
-  --header-title-margin-top: 18%;
+  --header-title-margin-top: 34px;
   --header-title-margin-left: 0px;
-  --header-text-margin-top: 5px;
-  --header-text-width: 355px;
-  --grid-vertically-gap: 0px;
-  --vertically-title: 1/4;
-  --vertically-article: 1/4;
+  --header-text-margin-top: 24px;
+  --grid-gap: 0px;
+  --grid-title-width: 355px;
+  --grid-title: 1/4;
+  --grid-article: 1/4;
   --ver-article-left: 0px;
-  --horizon-title: 1/4;
-  --horizon-article: 1/4;
-  --horizon-margin-top: 25px;
-  --horizon-margin-bot: 25px;
-  --horizon-gap: 0px;
-  --horizon-title-ght: 0%;
+  --quation-title: 1/4;
+  --quation-article: 1/4;
+  --quation-margin-top: 25px;
+  --quation-margin-bot: 25px;
+  --quation-gap: 0px;
+  --quation-title-ght: 0%;
   --picture-top: 50px;
   --gallery_gap: 10px;
   --gallery-columns: 1fr;
@@ -62,4 +58,68 @@
   --footer-margin-top: 50px;
   --footer-title-top: 17.5rem;
   --footer-title-bot: 17rem;
+}
+
+@media (width >= 768px) {
+  :root {
+    --min-height-page: 1024px;
+    --page-padding: 20px;
+    --menu-margin-top: 8px;
+    --titul-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --content-padding-to: 45px;
+    --content-title-top: 0px;
+    --content-ar-top: 0px;
+    --content-ar-title-margin-top: 55px;
+    --header-gap: 138px;
+    --header-title-margin-top: 40px;
+    --header-title-margin-left: -20px;
+    --header-text-margin-top: 0px;
+    --grid-gap: 20px;
+    --grid-title-width: 236px;
+    --grid-title: 1;
+    --grid-article: 2/4;
+    --ver-article-left: 10px;
+    --quation-title-ght: 70%;
+    --quation-margin-top: 80px;
+    --quation-gap: 20px;
+    --picture-top: 80px;
+    --gallery_gap: 20px;
+    --gallery-columns: 1fr 1fr 1fr;
+    --gallery-rows: min-content min-content min-content;
+    --image-block-size: 100%;
+    --image-max-block-size: 100%;
+    --image-object-fit: cover;
+    --img-colum-1: 1/3;
+    --img-row-1: 1;
+    --img-colum-2: 3/4;
+    --img-row-2: 1/3;
+    --img-colum-3: 1;
+    --img-row-3: 2/4;
+    --img-colum-4: 2;
+    --img-row-4: 2;
+    --img-colum-5: 2/4;
+    --img-row-5: 3/4;
+    --footer-margin-top: 80px;
+    --footer-title-top: 28rem;
+    --footer-title-bot: 27.5rem;
+  }
+}
+@media (width >= 1024px) {
+  :root {
+    --min-height-page: 768px;
+    --page-padding: 20px;
+    --menu-row: 1;
+    --menu-column: 2;
+    --menu-flex-direction: rows;
+    --menu-margin-top: 0px;
+    --menu-justify: center;
+    --header-gap: 89px;
+    --header-title-margin-top: 115px;
+    --header-text-margin-top: 0px;
+    --grid-title-width: 315px;
+    --quation-article: auto;
+    --ver-article-left: 0px;
+    --footer-title-top: 20rem;
+    --footer-title-bot: 19.5rem;
+  }
 }

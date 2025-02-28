@@ -23,13 +23,13 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: min-content min-content 1fr min-content min-content;
-  gap: var(--header-gap, 31px);
+  grid-template-rows: min-content min-content 1fr 1fr min-content;
+  gap: 1px;
   justify-items: end;
   align-items: start;
   min-height: 668px;
   height: 100vh;
-  margin-block-end: var(--header-margin-bot, 25px);
+  margin-block-end: var(--margin-block, 40px);
 }
 
 .decorated-zone::before {
@@ -66,7 +66,7 @@
 .header__theme-menu {
   grid-row: var(--menu-row, 2);
   grid-column: var(--menu-column, 3);
-  margin-block-start: var(--menu-margin-top, 18px);
+  margin-block-start: var(--menu-margin-top, 36px);
   justify-self: var(--menu-justify, end);
 }
 
@@ -107,7 +107,7 @@
 }
 
 .header__title {
-  margin-block-start: var(--header-title-margin-top, 47px);
+  margin-block-start: var(--header-title-margin-top, 66px);
   margin-inline-start: var(--header-title-margin-left, 0px);
   justify-self: start;
   align-self: start;
@@ -124,9 +124,8 @@
 }
 
 .header__text {
-  margin-block-end: var(--header-text-margin-bot, 10px);
+  margin-block-start: var(--header-text-margin-top, 54px);
   justify-self: end;
-  align-self: start;
   grid-row: 4;
   grid-column: 1/4;
   min-width: 355px;
@@ -182,7 +181,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: var(--grid-gap, 0px);
-  margin-block-start: var(--content-ar-title-margin-top, 0px);
   justify-self: start;
   align-self: start;
 }
@@ -194,7 +192,7 @@
 
 .grid .content__article {
   grid-column: var(--grid-article, 1/4);
-  padding-inline-start: var(--ver-article-left, 0px);
+  padding-inline-start: var(--grid-article-left, 0px);
 }
 
 .content__title {
@@ -202,7 +200,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  margin-block-start: var(--content-title-top, 15px);
+  padding-block-start: var(--content-title-top, 15px);
+}
+
+.grid .content__title:nth-child(1) {
+  padding-block-start: 0;
 }
 
 .content__article {
@@ -239,7 +241,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: var(--quation-gap, 0px);
   margin-block-start: var(--quation-margin-top, 35px);
-  margin-block-end: var(--quation-margin-bot, 35px);
+  margin-block-end: var(--quation-margin-bot, 50px);
 }
 
 .grid-quation .content__title {
@@ -303,7 +305,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: min-content min-content 1fr min-content min-content;
-  margin-block-start: var(--footer-margin-top, 40px);
+  margin-block-start: var(--margin-block, 40px);
   min-height: 668px;
   height: 100vh;
 }

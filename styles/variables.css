@@ -12,21 +12,19 @@
   --visible-decor: block;
   --min-height-page: 668px;
   --page-padding: 10px;
-  --menu-margin-top: 18px;
+  --menu-margin-top: 36px;
   --menu-row: 2;
   --menu-column: 3;
   --menu-flex-direction: column;
   --menu-justify: end;
   --titul-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --header-title-margin-top: 66px;
+  --header-title-margin-left: 0px;
+  --header-text-margin-top: 54px;
+  --margin-block: 40px;
   --content-padding-to: 25px;
   --content-title-top: 15px;
   --content-ar-top: 20px;
-  --content-ar-title-margin-top: 0px;
-  --header-gap: 20px;
-  --header-margin-bot: 25px;
-  --header-title-margin-top: 47px;
-  --header-title-margin-left: 0px;
-  --header-text-margin-bot: 10px;
   --grid-gap: 0px;
   --grid-title-width: 355px;
   --grid-title: 1/4;
@@ -35,7 +33,7 @@
   --quation-title: 1/4;
   --quation-article: 1/4;
   --quation-margin-top: 35px;
-  --quation-margin-bot: 35px;
+  --quation-margin-bot: 50px;
   --quation-gap: 0px;
   --quation-title-ght: 0%;
   --picture-top: 50px;
@@ -55,7 +53,6 @@
   --img-row-4: 4;
   --img-colum-5: 1/4;
   --img-row-5: 5;
-  --footer-margin-top: 40px;
   --footer-title-top: 17.5rem;
   --footer-title-bot: 17rem;
 }
@@ -63,25 +60,24 @@
 @media (width >= 768px) {
   :root {
     --page-padding: 20px;
-    --menu-margin-top: 8px;
+    --menu-margin-top: 14vh;
     --titul-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --header-title-margin-top: 17.1vh;
+    --header-title-margin-left: -20px;
+    --header-text-margin-top: 8.75vh;
+    --margin-block: 60px;
     --content-padding-to: 45px;
     --content-title-top: 0px;
     --content-ar-top: 0px;
-    --content-ar-title-margin-top: 35px;
-    --header-gap: 138px;
-    --header-title-margin-top: 40px;
-    --header-title-margin-left: -20px;
-    --header-text-margin-bot: 0px;
     --grid-gap: 20px;
     --grid-title-width: 236px;
     --grid-title: 1;
     --grid-article: 2/4;
-    --ver-article-left: 10px;
+    --grid-article-left: 7px;
     --quation-title-ght: 70%;
     --quation-margin-top: 80px;
     --quation-gap: 20px;
-    --quation-margin-bot: 45px;
+    --quation-margin-bot: 80px;
     --picture-top: 80px;
     --gallery_gap: 20px;
     --gallery-columns: 1fr 1fr 1fr;
@@ -99,7 +95,6 @@
     --img-row-4: 2;
     --img-colum-5: 2/4;
     --img-row-5: 3/4;
-    --footer-margin-top: 60px;
     --footer-title-top: 28rem;
     --footer-title-bot: 27.5rem;
   }
@@ -112,11 +107,11 @@
     --menu-margin-top: 20px;
     --menu-justify: center;
     --header-gap: 89px;
-    --header-title-margin-top: 115px;
-    --header-text-margin-top: 0px;
+    --header-title-margin-top: 37.5vh;
+    --header-text-margin-top: 16.79vh;
     --grid-title-width: 315px;
     --quation-article: auto;
-    --ver-article-left: 0px;
+    --grid-article-left: 0px;
     --footer-title-top: 20rem;
     --footer-title-bot: 19.5rem;
   }
